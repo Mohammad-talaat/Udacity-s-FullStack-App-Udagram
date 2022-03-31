@@ -3,6 +3,7 @@ orbs:
   node: circleci/node@5.0.2
   aws-cli: circleci/aws-cli@2.1.0
   aws-elastic-beanstalk: circleci/aws-elastic-beanstalk@2.0.1
+  browserForTesting: circleci/browser-tools@1.2.4
 
 
 jobs:
@@ -16,7 +17,7 @@ jobs:
       - run: node --version
       - aws-cli/setup
       - aws-elastic-beanstalk/setup
-
+      - browserForTesting/install-chrome
       - run:
           name: install node modules and test frontend
           command: |
