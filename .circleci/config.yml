@@ -18,11 +18,15 @@ jobs:
       - aws-elastic-beanstalk/setup
 
       - run:
+          name: install node modules and test frontend
+          command: |
+            npm run frontend:test
+      - run:
           name: build frontend
           command: |
             npm run frontend:build
       - run:
-          name: build backend
+          name: install node modules and build backend
           command: |
             npm run backend:build
       - run:
@@ -38,7 +42,7 @@ jobs:
 workflows:
   main:                    
     jobs:
-      - build-deploy:  
+      - build:  
           filters:
             branches:
                only:                
