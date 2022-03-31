@@ -4,8 +4,8 @@
   "description": "udacity third project ",
   "main": "index.js",
   "scripts": {
-    "backend:test": "cd udagram-api && npm install && npm run test && cd .. ",
-    "backend:build": "cd udagram-api && npm run build && cd .. ",
+    "backend:test": "cd udagram-api && npm run test && cd .. ",
+    "backend:build": "cd udagram-api && npm install && npm run build && cd .. ",
     "backend:deploy": "cd udagram-api && npm run deploy && cd .. ",
 
     "frontend:test": "cd udagram-frontend && npm install && npm run test && cd .. ",
