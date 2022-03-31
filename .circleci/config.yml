@@ -27,7 +27,11 @@ jobs:
           command: |
             npm run frontend:build
       - run:
-          name: install node modules and build backend
+          name: install node modules and test backend
+          command: |
+            npm run backend:test            
+      - run:
+          name: build backend
           command: |
             npm run backend:build
       - run:
