@@ -28,7 +28,7 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
 
   // Root URI call
   app.get("/", async (req, res) => {
-    res.send("<h1>The server is up and running from the Cricle CLI 2</h1>");
+    res.send("<h1>The server is up and running from the Cricle CLI 3</h1>");
   });
 
   // Start the Server
