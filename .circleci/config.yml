@@ -5,6 +5,11 @@ orbs:
 
 jobs:
   build:
+    docker:
+      - image: 'cimg/base:stable'
+    steps:
+      - checkout
+      - node/install:
         node-version: '16.14.2'
       - run: node --version
       - aws-cli/setup
