@@ -1,15 +1,13 @@
-version: 2.1
 orbs:
   node: circleci/node@5.0.2
+  aws-cli: circleci/aws-cli@2.1.0
+
+
 jobs:
   build:
-    docker:
-      - image: 'cimg/base:stable'
-    steps:
-      - checkout
-      - node/install:
         node-version: '16.14.2'
       - run: node --version
+      - aws-cli/setup
       - run:
           name: build frontend
           command: |
@@ -18,3 +16,5 @@ jobs:
           name: build backend
           command: |
             npm run backend:build
+ 
+       
