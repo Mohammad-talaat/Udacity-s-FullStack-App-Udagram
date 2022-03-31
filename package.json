@@ -1,0 +1,24 @@
+{
+  "name": "hosting_udagram",
+  "version": "1.0.0",
+  "description": "udacity third project ",
+  "main": "index.js",
+  "scripts": {
+    "backend:build": "cd udagram-api && npm install && npm run build && cd .. ",
+    "backend:deploy": "cd udagram-api && npm run deploy && cd .. ",
+
+    "frontend:test": "cd udagram-frontend && npm install && npm run test && cd .. ",
+    "frontend:build": "cd udagram-frontend && npm install && npm run build && cd .. ",
+    "frontend:deploy": "cd udagram-frontend && npm run deploy && cd .. "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohammad-talaat/Udacity-s-FullStack-App-Udagram.git"
+  },
+  "author": "Muhammad Talaat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohammad-talaat/Udacity-s-FullStack-App-Udagram/issues"
+  },
+  "homepage": "https://github.com/Mohammad-talaat/Udacity-s-FullStack-App-Udagram#readme"
+}
